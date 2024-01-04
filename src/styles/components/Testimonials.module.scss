@@ -1,0 +1,59 @@
+@import '../globals/variables';
+
+.testimonials_content {
+  height: 100vh;
+  background-color: $black;
+  color: whitesmoke;
+
+  @media (min-width: 768px) {
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 1.2rem 0;
+    padding-top: 2rem;
+
+    @media (min-width: 980px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .testimony {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 80rem;
+    margin: auto;
+
+    @media (min-width: 980px) {
+      /* padding: 2rem; */
+    }
+
+    .testimony_img {
+      width: 4rem, auto;
+      height: 55rem;
+
+      /* @media (min-width: 980px) {
+      } */
+
+    }
+
+    p {
+      position: absolute;
+      line-height: 2.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      bottom: 7rem;
+      z-index: 1;
+    }
+
+    @media (min-width: 980px) {
+      p{
+        position: relative;
+        font-size: 2.2rem;
+      }
+
+    }
+  }
+}
